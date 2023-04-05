@@ -16,7 +16,7 @@ public interface UserDAO {
 	Connection getConnect() throws SQLException;
 	void closeAll(Connection conn, PreparedStatement ps) throws SQLException;
 	void closeAll(Connection conn, PreparedStatement ps, ResultSet rs)throws SQLException;
-
+	//나는 이원근
 	//이용자 공통 기능
 	//회원가입
 	void insertUser(User vo) throws SQLException, DuplicateTargetException;
