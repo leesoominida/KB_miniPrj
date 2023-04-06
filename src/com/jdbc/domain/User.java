@@ -38,8 +38,6 @@ public class User {
 		this.role = role;
 	}
 	
-
-	
 	public int getUserNum() {
 		return userNum;
 	}
