@@ -10,7 +10,7 @@ public class User {
 	private int gender;
 	private String birth;
 	private int role;
-	private ArrayList<Evaluation> evaluation;
+	private ArrayList<Evaluation> userEval;
 	
 	public User() {
 		super();
@@ -37,8 +37,6 @@ public class User {
 		this.birth = birth;
 		this.role = role;
 	}
-	
-
 	
 	public int getUserNum() {
 		return userNum;
@@ -96,13 +94,12 @@ public class User {
 		this.role = role;
 	}
 	
-
-	public ArrayList<Evaluation> getEvaluation() {
-		return evaluation;
+	public ArrayList<Evaluation> getUserEval() {
+		return userEval;
 	}
 
-	public void setEvaluation(ArrayList<Evaluation> evaluation) {
-		this.evaluation = evaluation;
+	public void setUserEval(ArrayList<Evaluation> userEval) {
+		this.userEval = userEval;
 	}
 
 	@Override
@@ -111,6 +108,4 @@ public class User {
 				+ gender + ", birth=" + birth + ", role=" + role + "]";
 	}
 	
-	
- 
 }
