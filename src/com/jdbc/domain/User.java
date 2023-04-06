@@ -1,5 +1,7 @@
 package com.jdbc.domain;
 
+import java.util.ArrayList;
+
 public class User {
 	private int userNum;
 	private String id;
@@ -8,6 +10,7 @@ public class User {
 	private int gender;
 	private String birth;
 	private int role;
+	private ArrayList<Evaluation> evaluation;
 	
 	public User() {
 		super();
@@ -91,6 +94,15 @@ public class User {
 
 	public void setRole(int role) {
 		this.role = role;
+	}
+	
+
+	public ArrayList<Evaluation> getEvaluation() {
+		return evaluation;
+	}
+
+	public void setEvaluation(ArrayList<Evaluation> evaluation) {
+		this.evaluation = evaluation;
 	}
 
 	@Override
