@@ -110,6 +110,4 @@ public class User {
 				+ gender + ", birth=" + birth + ", role=" + role + "]";
 	}
 	
-	
- 
 }
